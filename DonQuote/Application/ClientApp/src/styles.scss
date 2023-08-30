@@ -1,20 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+$primary: #350000;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons';
+
+@font-face {
+  font-family: killam;
+  src: url(assets/font/Killam-Bold.ttf) format("ttf");
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+@font-face {
+  font-family: 'therock';
+  src: url(assets/font/THEROCK.woff) format("woff");
 }
 
-code {
-  color: #e01a76;
+@font-face {
+  font-family: 'prison';
+  src: url(assets/font/The_Prison.woff) format("woff");
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+body {
+  background-color: var(--bs-primary-bg-subtle);;
 }
