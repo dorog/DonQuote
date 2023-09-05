@@ -11,12 +11,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         font-family: prison;
         
         //box-shadow: inset 0px 0px 12px 2px black;
         p {
-            flex-grow: 2;
+            
             font-size: 13rem;
             color: var(--bs-primary);
         }

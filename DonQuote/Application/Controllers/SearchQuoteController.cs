@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class SearchQuoteController : ControllerBase
     {

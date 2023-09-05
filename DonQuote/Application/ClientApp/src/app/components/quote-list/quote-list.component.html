@@ -1,0 +1,3 @@
+<div *ngIf="!!quotes" class="container-fluid">
+  <app-quote *ngFor="let quote of quotes.items" [quote]="quote"></app-quote>
+</div>
