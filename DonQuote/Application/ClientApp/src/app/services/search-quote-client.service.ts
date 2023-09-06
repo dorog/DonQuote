@@ -15,7 +15,7 @@ export class SearchQuoteClientService {
   }
 
   getQuotes(quoteFilter: QuoteFilter): Observable<PagedItems<Quote>> {
-    return of({
+    /*return of({
       currentPageNumber: 0,
       totalPages: 10,
       items: [
@@ -28,12 +28,12 @@ export class SearchQuoteClientService {
         { originatorName: 'name2', message: 'message2' },
         { originatorName: 'name2', message: 'message2' },
       ],
-    } as PagedItems<Quote>);
+    } as PagedItems<Quote>);*/
 
-    /*return this.http.post<PagedItems<Quote>>(
+    return this.http.post<PagedItems<Quote>>(
       this.baseUrl + 'searchquote/search',
       quoteFilter
-    );*/
+    );
   }
 }
 

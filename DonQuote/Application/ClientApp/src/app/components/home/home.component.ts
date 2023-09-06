@@ -24,9 +24,9 @@ export class HomeComponent {
   onSearch(): void {
     this.searchQuoteClient
       .getQuotes({
-        message: this.formGroup.controls['searchText'].value,
+        message: '', //this.formGroup.controls['searchText'].value,
         originatorName: this.formGroup.controls['searchText'].value,
-        pageNumber: 0,
+        pageNumber: 1,
       })
       .subscribe((quotes) => (this.quotes = quotes));
   }
