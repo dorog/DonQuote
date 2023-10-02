@@ -1,4 +1,4 @@
-<div class="main-page-container">
+<div class="main-page-container" [ngClass]="isFall ? 'bg-fall' : null">
   <div class="subtitle">
     <figure>
       <blockquote class="blockquote">
@@ -29,3 +29,10 @@
     <app-quote-list *ngIf="quotes" [quotes]="quotes"></app-quote-list>
   </div>
 </div>
+<footer>
+  <a
+    href="https://www.freepik.com/free-vector/four-seasons-landscape-banners-set_3817343.htm#query=seasons&position=18&from_view=search&track=sph"
+    >Image by macrovector</a
+  >
+  on Freepik
+</footer>

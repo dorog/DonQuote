@@ -15,6 +15,8 @@ export class HomeComponent {
   public formGroup: FormGroup;
   public quotes?: PagedItems<Quote>;
 
+  public isFall = false;
+
   constructor(public searchQuoteClient: SearchQuoteClientService) {
     this.formGroup = new FormGroup({
       searchText: new FormControl(),
@@ -22,6 +24,7 @@ export class HomeComponent {
   }
 
   onSearch(): void {
+    this.isFall = true;
     this.searchQuoteClient
       .getQuotes({
         message: '', //this.formGroup.controls['searchText'].value,
