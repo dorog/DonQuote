@@ -13,11 +13,11 @@
 .main-page-container {
   z-index: 0;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr;
   height: 100vh;
   position: relative;
-  background-image: url("/assets/image/spring.svg");
+  background-image: url("/assets/image/summer.svg");
   background-position: 0 0;
   background-size: cover;
   &.bg-fall::before {
@@ -52,7 +52,7 @@
 
     //box-shadow: inset 0px 0px 12px 2px black;
     p {
-      font-size: 13rem;
+      font-size: 6rem;
       color: var(--bs-primary);
     }
   }
